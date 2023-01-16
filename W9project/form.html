@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome Home Form Page</title>	
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="images/rainbird.ico" type="image/x-icon">
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+	</head>
+	<div id="wrapper">
+		<header title="Brush of Color">
+			<a href="home.html"> 
+			<h1>Welcome to the Email Form</h1>
+			</a>
+		</header>
+		<nav>
+		<ul>
+			<li>
+				<a class="navBar" href="home.html">Home</a>  | 
+				<a class="navBar" href="resources.html">Resources</a> | 
+				<a class="navBar" href="form.html">Form</a> | 
+				<a class="navBar" href="Sexuality.html">Sexuality</a> | 
+				<a class="navBar" href="history.html">History</a> | 
+				<a class="navBar" href="gender.html">Gender</a> 
+			</li>
+		</ul>
+	</nav><br>
+		<form class="form" id="emailForm" method="POST" action="mailto:leonar59@email.franklin.edu?subject=webdemailformproject" enctype="text/plain">
+				
+			<fieldset>
+			<legend>Email Form</legend>	
+				<label for="fname">*First Name: </label>
+				<input type="text" name="fname" id="fname" required="required" 
+						placeholder="Your first name" size="15">&nbsp;
+				<label for="lname">*Last Name: </label>
+				<input type="text" name="lname" id="lname" required="required" 
+						placeholder="Your last name" size="15">&nbsp;
+				<label for="pname">Preferred Name: </label>
+				<input type="text" name="pname" id="pname" 
+						placeholder="Your preferred name" size="15">&nbsp;
+				<label for="locate">State or Country: </label>
+				<input type="text" name="locate" id="locate" 
+						placeholder="Location for Local Emails." size="20">&nbsp;				
+				<label for="email">*Email: </label>
+					<input type="email" name="email" id="email" required="required"
+						placeholder="email@email.com" size="15">
+				<label>Comments</label>		
+				<textarea name="comments" cols="20" rows="2" required placeholder="Comments or concerns?"></textarea><br>		
+			</fieldset>
+			<fieldset>
+			<legend>Additional Information</legend>
+			<label>Pronouns:</label><br>
+			<input type="radio" name="pronouns" value="she" required="required" checked="checked"> She/Her <br>
+            <input type="radio" name="pronouns" value="he"> He/Him <br>
+            <input type="radio" name="pronouns" value="they"> They/Them <br>
+			<input type="radio" name="pronouns" value="other"> Other <br>
+			<textarea name="pronounsforother" cols="20" rows="2" required placeholder="If other, please type in your pronouns."></textarea><br>
+			</fieldset>
+			<fieldset>
+			<legend>What do you want us to send you?</legend>
+			<label> Choose at least one below:</label><br>
+			<input type="checkbox" name="topics" value="News" checked="checked"> News <br>
+			<input type="checkbox" name="topics" value="History"> History <br>
+			<input type="checkbox" name="topics" value="PHistory"> People of History <br>
+			<input type="checkbox" name="topics" value="FPT"> Famous People Today <br>
+			<input type="checkbox" name="topics" value="ST"> Sexuality Types <br>
+			<input type="checkbox" name="topics" value="GI"> Gender Identities <br>
+			<input type="checkbox" name="topics" value="Resources"> Resources <br>
+			<input type="checkbox" name="topics" value="Hsites"> Helpful Sites <br>
+			<input type="checkbox" name="topics" value="Media"> LGBTQIA In Media <br>
+			<input type="checkbox" name="topics" value="SS"> Scientific Studies <br>
+			<input type="checkbox" name="topics" value="MoreInfo"> More Information <br>
+			</fieldset>
+			<input class="button" type="submit" name="emailformsubmit" value="submit">
+			<input class="button" type="reset" name="clearit" value="clear">
+		</form>
+				<img src="images/pride.jpg" alt="People at a Pride Parade" title="Be Proud"/>
+					<!-- Source: https://www.flickr.com/photos/cityofstpete/29134555198-->
+		<footer>
+			Copyright © Welcome Home 2022<br> 
+			leonar59@email.franklin.edu
+		</footer>
+	</div>	
+	</html>
